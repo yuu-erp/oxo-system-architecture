@@ -1,26 +1,24 @@
 {
   "compilerOptions": {
+    "target": "ES2022",
     "module": "commonjs",
-    "noImplicitAny": false,
-    "noUnusedLocals": false,
-    "removeComments": true,
-    "strictNullChecks": true,
-    "strictPropertyInitialization": false,
+    "lib": ["ES2022"],
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "noLib": false,
-    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
-    "useUnknownInCatchVariables": false,
-    "target": "ES2021",
-    "sourceMap": true,
-    "allowJs": false,
-    "outDir": "dist",
+    "emitDecoratorMetadata": true,
+    "incremental": true,
+    "rootDir": ".",
     "baseUrl": ".",
     "paths": {
-      "@oxo/config": ["./packages/config"],
-      "@oxo/config/*": ["./packages/config/*"]
+      "@oxo/config": ["packages/config/src"],
+      "@oxo/config/*": ["packages/config/src/*"]
     }
   },
-  "include": ["packages/**/*", "integration/**/*"],
-  "exclude": ["node_modules", "**/*.spec.ts"]
+  "include": ["packages/**/*", "services/**/*"],
+  "exclude": ["node_modules", "dist"]
 }
