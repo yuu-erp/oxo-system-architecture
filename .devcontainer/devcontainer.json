@@ -1,0 +1,16 @@
+{
+  "name": "oxo-backend",
+  "dockerComposeFile": ["../docker-compose.yml"],
+  "service": "postgres",
+  "workspaceFolder": "/workspace",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/sh"
+  },
+  "extensions": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "Prisma.prisma",
+    "ms-azuretools.vscode-docker"
+  ],
+  "remoteUser": "node"
+}

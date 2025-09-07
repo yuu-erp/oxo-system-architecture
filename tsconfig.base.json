@@ -1,13 +1,26 @@
 {
   "compilerOptions": {
-    "target": "ES2021",
     "module": "commonjs",
-    "lib": ["ES2021"],
-    "strict": true,
-    "esModuleInterop": true,
+    "noImplicitAny": false,
+    "noUnusedLocals": false,
+    "removeComments": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": false,
     "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true,
+    "noLib": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "useUnknownInCatchVariables": false,
+    "target": "ES2021",
+    "sourceMap": true,
+    "allowJs": false,
     "outDir": "dist",
-    "baseUrl": "."
-  }
+    "baseUrl": ".",
+    "paths": {
+      "@oxo/config": ["./packages/config"],
+      "@oxo/config/*": ["./packages/config/*"]
+    }
+  },
+  "include": ["packages/**/*", "integration/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
 }
