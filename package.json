@@ -1,5 +1,5 @@
 {
-  "name": "backend",
+  "name": "oxo-system-architecture",
   "private": true,
   "scripts": {
     "build": "turbo run build",
